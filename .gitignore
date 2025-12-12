@@ -1,0 +1,14 @@
+*/build/
+external/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+*.obj
+*.exe
+*.pdb
+
+*.code-workspace
+.vscode/
