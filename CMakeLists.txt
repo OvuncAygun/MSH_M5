@@ -18,12 +18,14 @@ target_include_directories(MSH_M5
 target_sources(MSH_M5
     PRIVATE
         src/MSH_M5.cpp
+        src/LogManager.cpp
     
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include/MSH_M5.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/ILogger.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/IObserver.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/NotificationType.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/LogManager.h
 )
 
 include(CTest)
