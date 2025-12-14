@@ -1,6 +1,6 @@
 #pragma once
 
-#include "IDevice.h"
+#include "../external/IDevice.h"
 
 class IObserver {
 public:

@@ -1,0 +1,14 @@
+--- MSH System Log Started ---
+[Sun Dec 14 19:03:40 2025] [TEST] Test senaryosu baslatildi.
+[Sun Dec 14 19:03:40 2025] [INFO] Notification preference changed.
+[Sun Dec 14 19:03:40 2025] [SMS] SMS sent for device update.
+[Sun Dec 14 19:03:40 2025] [INFO] Notification preference changed.
+[Sun Dec 14 19:03:40 2025] [ALARM] Alarm triggered for device update.
+--- MSH System Shutdown ---
+--- MSH System Log Started ---
+[Sun Dec 14 19:04:15 2025] [TEST] Test senaryosu baslatildi.
+[Sun Dec 14 19:04:15 2025] [INFO] Notification preference changed.
+[Sun Dec 14 19:04:15 2025] [SMS] SMS sent for device update.
+[Sun Dec 14 19:04:15 2025] [INFO] Notification preference changed.
+[Sun Dec 14 19:04:15 2025] [ALARM] Alarm triggered for device update.
+--- MSH System Shutdown ---
