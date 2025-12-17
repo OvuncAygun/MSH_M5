@@ -1,6 +1,6 @@
 #pragma once
 
-enum class DeviceType {
+enum DeviceType {
     Light,
     TV,
     Music,

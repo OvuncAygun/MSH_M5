@@ -1,10 +1,10 @@
 #pragma once
 
-#include "IDevice.h"
+#include "../external/IDevice.h"
 
 class IObserver {
 public:
-    virtual ~IObserver() = default;
+    virtual ~IObserver() {}
 
     virtual void update(IDevice* device) = 0;
 };

@@ -1,10 +1,13 @@
-#pragma once
+#ifndef ILOGGER_H
+#define ILOGGER_H
 
 #include <string>
 
 class ILogger {
 public:
-    virtual ~ILogger() = default;
+    virtual ~ILogger() {}
 
-    virtual void writeLog(std::string opType, std::string details) = 0;
+    virtual void writeLog(const std::string& opType, const std::string& details) = 0;
 };
+
+#endif 
