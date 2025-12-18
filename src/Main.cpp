@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../include/LogManager.h"
-#include "../include/NotificationListener.h"
-#include "../external/IDevice.h"
-#include "../external/DeviceType.h"
+#include "LogManager.h"
+#include "NotificationListener.h"
+#include "IDevice.h"
+#include "DeviceType.h"
 
 // --- MOCK DEVICE (Test Amaçlı Sahte Cihaz) ---
 // Diğer modüller hazır olmadığı için IDevice kontratına uyan bir taklitçi yazdık.

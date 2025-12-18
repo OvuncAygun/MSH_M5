@@ -8,6 +8,12 @@ public:
     MSH_M5();
     ~MSH_M5();
 
+    void initializeLoggerAndObserver();
+
     ILogger* getLogger();
     IObserver* getObserver();
+
+private:
+    ILogger* logger;
+    IObserver* observer;
 };
