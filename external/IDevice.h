@@ -7,7 +7,7 @@
 
 class IDevice {
 public:
-    virtual ~IDevice() {}
+    virtual ~IDevice() = default;
 
     virtual std::string getName() = 0;
     virtual void setName(const std::string& name) = 0;

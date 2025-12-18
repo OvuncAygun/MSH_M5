@@ -20,7 +20,7 @@ public:
     std::string getName() { return name; }
     void setName(const std::string& n) { name = n; }
     
-    DeviceType getDeviceType() { return Light; }
+    DeviceType getDeviceType() { return TYPE_Light; }
     void setDeviceType(DeviceType dt) {}
 
     bool getPowerState() { return power; }

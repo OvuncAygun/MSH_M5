@@ -6,22 +6,23 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(MSH_M5)
 
+add_library(EXTERNAL INTERFACE)
+
+target_include_directories(EXTERNAL
+    INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR}/external
+)
+
 target_include_directories(MSH_M5
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
+        EXTERNAL
     
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/external
         src
-        external
 )
 
 target_sources(MSH_M5
-    PRIVATE
-        src/MSH_M5.cpp
-        src/LogManager.cpp
-        src/NotificationListener.cpp
-    
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include/MSH_M5.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/ILogger.h
@@ -29,6 +30,11 @@ target_sources(MSH_M5
         ${CMAKE_CURRENT_SOURCE_DIR}/include/NotificationType.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/LogManager.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/NotificationListener.h
+    
+    PRIVATE
+        src/MSH_M5.cpp
+        src/LogManager.cpp
+        src/NotificationListener.cpp
 )
 
 include(CTest)
@@ -36,9 +42,8 @@ enable_testing()
 
 # FOR TESTING
 
-#[[
+
 
 add_executable(MSH_Test src/Main.cpp)
 target_link_libraries(MSH_Test PRIVATE MSH_M5)
 
-]]

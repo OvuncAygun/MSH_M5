@@ -1,12 +1,11 @@
 #pragma once
 
 enum DeviceType {
-    Light,
-    TV,
-    Music,
-    Camera,
-    Alarm,
-    SmokeDetector,
-    GasDetector
+    TYPE_Light,
+    TYPE_TV,
+    TYPE_Music,
+    TYPE_Camera,
+    TYPE_Alarm,
+    TYPE_SmokeDetector,
+    TYPE_GasDetector
 };
-
