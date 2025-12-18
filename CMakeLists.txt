@@ -9,9 +9,9 @@ add_library(MSH_M5)
 target_include_directories(MSH_M5
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/external
     
     PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/external
         src
         external
 )
