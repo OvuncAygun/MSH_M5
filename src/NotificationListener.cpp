@@ -1,4 +1,4 @@
-#include "../include/NotificationListener.h"
+#include "NotificationListener.h"
 #include <iostream>
 
 NotificationListener::NotificationListener(ILogger* loggerRef) {
