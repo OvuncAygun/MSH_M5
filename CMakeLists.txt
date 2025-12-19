@@ -35,8 +35,9 @@ enable_testing()
 
 # FOR TESTING
 
-
+#[[
 
 add_executable(MSH_Test src/Main.cpp)
 target_link_libraries(MSH_Test PRIVATE MSH_M5)
 
+]]
