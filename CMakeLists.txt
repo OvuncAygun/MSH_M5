@@ -6,11 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(MSH_M5)
 
-add_library(EXTERNAL INTERFACE)
-target_include_directories(EXTERNAL
-    INTERFACE
-        ${CMAKE_CURRENT_SOURCE_DIR}/external
-)
+target_link_libraries(MSH_M5 PUBLIC MSH_M1)
 
 target_include_directories(MSH_M5
     PUBLIC
@@ -24,7 +20,6 @@ target_sources(MSH_M5
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include/MSH_M5.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/ILogger.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/include/IObserver.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/NotificationType.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/LogManager.h
         ${CMAKE_CURRENT_SOURCE_DIR}/include/NotificationListener.h
