@@ -1,9 +1,0 @@
---- MSH System Log Started ---
-[Thu Dec 18 12:47:58 2025] [SYSTEM] Test baslatildi.
-[Thu Dec 18 12:47:58 2025] [INFO] Notification preference changed.
-[Thu Dec 18 12:47:58 2025] [INFO] Device update received (Log Only).
-[Thu Dec 18 12:47:58 2025] [INFO] Notification preference changed.
-[Thu Dec 18 12:47:58 2025] [SMS] SMS sent for device update.
-[Thu Dec 18 12:47:58 2025] [INFO] Notification preference changed.
-[Thu Dec 18 12:47:58 2025] [ALARM] Alarm triggered for device update.
---- MSH System Shutdown ---
